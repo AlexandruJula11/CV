@@ -1,0 +1,25 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  margin-left: 12px;
+}
+body .header-content h1 {
+  text-align: center;
+  color: rgb(89, 89, 89);
+  font-weight: 700;
+}
+body .header-content ul {
+  list-style-type: none;
+  color: rgb(80, 68, 170);
+  font-weight: 500;
+  padding: 0;
+}
+body ul {
+  list-style-type: none;
+  font-weight: 500;
+  padding: 0;
+}
+body li {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}/*# sourceMappingURL=styles.css.map */
