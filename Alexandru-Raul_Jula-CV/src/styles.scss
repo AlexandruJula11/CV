@@ -3,39 +3,42 @@ $colorB: rgb(29, 130, 76);
 $colorB: rgb(9, 53, 52);
 
 
-body{
+body {
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
     margin: 0;
     margin-left: 12px;
-    .header-content{
 
 
-        h1{
+    .header-content {
+
+
+        h1 {
 
             text-align: center;
-            color: $gray;
+            color: $colorA;
             font-weight: 700;
         }
 
-        ul{
+        ul {
 
             list-style-type: none;
-            color: $purple;
+            color: $colorB;
             font-weight: 500;
             padding: 0;
+            display: flex;
         }
     }
 
-    ul{
+    ul {
 
         list-style-type: none;
         font-weight: 500;
         padding: 0;
     }
 
-    li{
+    li {
 
         padding-top: 4px;
         padding-bottom: 4px;

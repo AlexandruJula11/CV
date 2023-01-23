@@ -5,14 +5,15 @@ body {
 }
 body .header-content h1 {
   text-align: center;
-  color: rgb(89, 89, 89);
+  color: rgb(34, 213, 175);
   font-weight: 700;
 }
 body .header-content ul {
   list-style-type: none;
-  color: rgb(80, 68, 170);
+  color: rgb(9, 53, 52);
   font-weight: 500;
   padding: 0;
+  display: flex;
 }
 body ul {
   list-style-type: none;
