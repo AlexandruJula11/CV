@@ -1,47 +1,107 @@
-$colorA: rgb(34, 213, 175);
-$colorB: rgb(29, 130, 76);
-$colorB: rgb(9, 53, 52);
-
+@import 'variables.scss';
+@import 'functions.scss';
+@import 'media.scss';
 
 body {
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-    margin: 0;
-    margin-left: 12px;
+    margin: 0.5rem auto;
+    width: 60rem;
+    padding: 0.5rem 0.5rem;
+    color: $colorB;
+    z-index: -1;
+    @include createBorder($colorC, $bigBorderWidth);
 
 
     .header-content {
 
 
+        z-index: 1;
+
+        @include createBorder($colorC, $smallBorderWidth);
+
+        .white-background{
+
+            height: 7.5rem;
+        }
+
+        .colored-background{
+
+            height: 6rem;
+            background-color: $colorA;
+            text-align: right;
+
+            .contact{
+
+                margin: auto 0;
+                letter-spacing: 0.125rem;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: $veryLightFontWeight;
+                font-size: large;
+            }
+        }
+
         h1 {
 
-            text-align: center;
+            margin: 0;
+            text-align: left;
             color: $colorA;
-            font-weight: 700;
+            font-weight: $bolderFontWeight;
+            position: relative;
+            top: 2.5rem;
+            left: 1.5rem;
         }
 
         ul {
 
             list-style-type: none;
-            color: $colorB;
-            font-weight: 500;
+            color: white;
+            font-weight: $lighterFontWeight;
             padding: 0;
             display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+
+            li{
+
+                font-weight: bolder;
+                font-size: small;
+            }
         }
     }
 
     ul {
 
         list-style-type: none;
-        font-weight: 500;
+        font-weight: $lighterFontWeight;
         padding: 0;
     }
 
     li {
 
-        padding-top: 4px;
-        padding-bottom: 4px;
+        padding: 0.25rem;
+    }
+
+    section{
+
+        &:not(.experience, .education){
+
+
+            h4{
+
+                font-style: italic;
+            }
+            
+        }
+    }
+
+    .cv-content{
+
+        margin: 0 1.5rem;
+        box-shadow: 0 0.175rem 0.75rem -0.25rem #000000;
+        padding: 1rem;
+        z-index: 1;
     }
 
 }
